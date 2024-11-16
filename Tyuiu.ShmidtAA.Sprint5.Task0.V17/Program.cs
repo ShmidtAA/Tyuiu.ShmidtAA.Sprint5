@@ -33,6 +33,8 @@ namespace Tyuiu.ShmidtAA.Sprint5.Task0.V17
 
             Console.WriteLine($"файл создан {res}");
 
+            Console.WriteLine(File.ReadAllText(res));
+
         }
     }
 }
