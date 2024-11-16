@@ -7,13 +7,14 @@ namespace Tyuiu.ShmidtAA.Sprint5.Task0.V17.Lib
     {
         public string SaveToFileTextData(int x)
         {
-            string path = $@"{Directory.GetCurrentDirectory()}\OutPutFileTask0.txt";
+
+            string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask0.txt");
 
             double res = Math.Pow(2.4 *x, 3) + Math.Pow(0.4 * x,2) - 1.4 * x + 4.1;
 
             res = Math.Round(res,3);
 
-            File.WriteAllText(path,Convert.ToString(res));
+            File.WriteAllText(path,res.ToString());
             
             return path;
 
