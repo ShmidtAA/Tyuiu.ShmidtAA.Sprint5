@@ -40,7 +40,7 @@ namespace Tyuiu.ShmidtAA.Sprint5.Task7.V27.Test
 
 
 
-            string wait = "Это строка с пробелами";
+            string wait = "Этострокаспробелами";
 
             Assert.AreEqual(wait, text);
         }

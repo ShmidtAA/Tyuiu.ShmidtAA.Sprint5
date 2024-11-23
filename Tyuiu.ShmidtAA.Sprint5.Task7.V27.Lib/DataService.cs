@@ -16,7 +16,7 @@ namespace Tyuiu.ShmidtAA.Sprint5.Task7.V27.Lib
 
                 try
                 {
-                    text = text.Replace("  "," ");
+                    text = text.Replace("  ","");
                     File.WriteAllText(newPath, text);
 
                 }
